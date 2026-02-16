@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Candy - The Goodest Girl</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- Login Page -->
+    <div id="loginPage" class="login-page hidden">
+        <div class="grid-bg"></div>
+        <div class="bg-layer"></div>
+        <div class="login-container">
+            <h2>Check whether your email is Candy Certified</h2>
+            <div class="email-input-container">
+                <input type="email" id="emailInput" class="email-input" placeholder="Enter your email">
+                <button class="submit-arrow" onclick="checkEmail()"></button>
+            </div>
+            <div id="messageBox" class="message-box"></div>
+            <button id="backButton" class="back-btn hidden" onclick="goBackToMain()">Back to Candy's Website</button>
+        </div>
+    </div>
+
+    <!-- Main Page -->
+    <div id="mainPage" class="main-page">
+        <section class="hero">
+            <div class="grid-bg"></div>
+            <div class="bg-layer"></div>
+            <div class="hero-content">
+                <img src="candy.jpg" alt="Candy" class="dog-photo">
+                <div class="title-container">
+                    <h1 class="glitch">CANDY</h1>
+                    <div class="arrow-pointer">
+                        <svg viewBox="0 0 300 200">
+                            <path class="arrow-path" d="M 10,30 Q 80,10 130,80 T 250,160" stroke-linecap="round" />
+                            <polygon class="arrow-path" points="250,160 240,150 245,165 230,165" fill="#FFB6C1" />
+                        </svg>
+                        <div class="arrow-text" id="arrowText">
+                            <span class="underline" onclick="handleArrowClick()">login</span> to add<br>your candy
+                            pictures
+                        </div>
+                    </div>
+                </div>
+                <p class="subtitle">The Goodest Girl in the Galaxy</p>
+                <input type="file" id="fileInput" accept="image/*" multiple>
+                <button class="upload-btn" id="uploadBtn" onclick="document.getElementById('fileInput').click()">
+                    Add Your Candy Pictures
+                </button>
+            </div>
+            <div class="scroll-indicator"></div>
+        </section>
+
+        <div class="neon-line"></div>
+
+        <section class="gallery-strip">
+            <div class="gallery-header">
+                <h2>CANDY'S GALLERY</h2>
+            </div>
+            <div class="gallery-track" id="galleryTrack">
+                <div class="empty-gallery">Login and get certified to add pictures of Candy!</div>
+            </div>
+        </section>
+
+        <div class="neon-line"></div>
+
+        <section class="section">
+            <div class="content-box">
+                <h2>Introduction</h2>
+                <p>Meet Candy. She's not just a dog, she's a force of nature, a professional snuggler, and a certified
+                    happiness expert.</p>
+                <p>Candy believes that every lap is meant to be sat on (regardless of size constraints), every tear
+                    deserves a thorough licking, and every moment is an opportunity for tail wags and belly rubs.</p>
+            </div>
+        </section>
+
+        <div class="neon-line"></div>
+
+        <section class="section">
+            <div class="content-box">
+                <h2>About Candy</h2>
+                <p>Candy came into this world with one mission: to spread love and chaos in equal measure. With her
+                    soulful eyes and that magnificent snoot, she's mastered the art of getting exactly what she
+                    wants-usually treats, walks, and more treats.</p>
+                <p>She's a professional napper, an amateur landscaper (your garden will never be the same), and holds a
+                    black belt in the ancient art of counter surfing. Despite weighing as much as a small child, she's
+                    convinced she's a lap dog and will attempt to prove this at every opportunity.</p>
+                <p>Her hobbies include staring contests with squirrels, eating apples, and providing
+                    emotional support whether you asked for it or not.</p>
+            </div>
+        </section>
+
+        <div class="neon-line"></div>
+
+        <section class="section">
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Expert Cuddler</h3>
+                    <p>Specializes in therapeutic lap-sitting and strategic body placement for maximum warmth.</p>
+                </div>
+                <div class="card">
+                    <h3>Ball Retrieval</h3>
+                    <p>Advanced degree in fetching. Will bring ball back 9 out of 10 times. The 10th time she keeps it.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Emotional Support</h3>
+                    <p>Available 24/7 for emergency snuggles and mood-lifting services.</p>
+                </div>
+                <div class="card">
+                    <h3>Security Detail</h3>
+                    <p>Alerts household to all doorbell rings, phone calls, and suspicious pigeons.</p>
+                </div>
+                <div class="card">
+                    <h3>Food Critic</h3>
+                    <p>Expert taste-tester. No meal is complete without her thorough inspection and approval.</p>
+                </div>
+                <div class="card">
+                    <h3>Zoomies Champion</h3>
+                    <p>Gold medalist in random bursts of energy. Specializes in 3 AM bedroom sprints.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="neon-line"></div>
+
+        <section class="section">
+            <div class="content-box">
+                <h2>Contact</h2>
+                <p>Want to schedule a playdate? Need some wisdom? Looking for a snuggle buddy in town? Candy is
+                    always available for pets, treats, and meaningful conversations (she's a great listener).</p>
+                <p>You can usually find her napping in her bed, waiting by the kitchen for food, or dramatically sighing
+                    because you've been on your phone for more than 10 minutes.</p>
+
+                <div class="quote-box">
+                    <p>Bring me an apple and I shall bless you for eternity... after eating it.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
